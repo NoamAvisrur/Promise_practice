@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+    <style>
+    .answer{
+         background-color: #a4cadc;
+         padding: 1rem;
+         border-radius: 5px;
+         text-align: center;
+         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+         margin-bottom: 1rem;
+     }
+     .fruits, .vegetables, .fruits2, .vegetables2, .fruitsAndvegs  {
+         columns: 6;
+     }
+     .fruits, .fruits2, .fruitsAndvegs{
+         background-color: #4cd4b9; 
+         border-radius: 3px;
+         padding: 1rem;
+     }
+     .vegetables, .vegetables2{
+         background-color: #58aac7;
+         border-radius: 3px;
+         padding: 1rem;
+     }
+      p {
+         display: block;
+         margin: 0px;
+      }
+	</style>
+</head>
+<body>
+    <div class="answer">
+        <h1>Answer 1</h1>
+        <h4>(two separated promises for two separated $get)</h4>
+        <h3>Fruits</h3>
+        <div class="fruits"></div>
+        <h3>Vegetables</h3>
+        <div class="vegetables"></div>
+    </div>  
+    <div class="answer">
+        <h1>Answer 2</h1>
+        <h4>(one chained promise with two separated $get)</h4>
+        <h3>Fruits</h3>
+        <div class="fruits2"></div>
+        <h3>Vegetables</h3>
+        <div class="vegetables2"></div>
+    </div> 
+    <div class="answer">
+        <h1>Answer 3</h1>
+        <h4>(one promise all combining two $gets)</h4>
+        <h3>Fruits & Vegetables</h3>
+        <div class="fruitsAndvegs"></div>
+    </div> 
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
