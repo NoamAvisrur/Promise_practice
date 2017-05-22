@@ -79,12 +79,12 @@ P.then(function(data){
 //--------answer3--one promise all combining two $gets------------------
 
 function getJson(url){
-	var promise = new Promise(function (resolve, reject) {
-		$.get(url, function(data) {
-			resolve(data);
-		});
+    var promise = new Promise(function (resolve, reject) {
+	$.get(url, function(data) {
+	    resolve(data);
 	});
-	return promise;
+    });
+    return promise;
 }
 
 Promise.all([getJson('fruits.txt'), getJson('vegetables.txt')])
