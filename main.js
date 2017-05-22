@@ -61,13 +61,13 @@ P.then(function(data){
     })    
 })
 .then(function (data) {
-		return new Promise(function (resolve, reject) {
-			setTimeout(function () {
-                console.log('4');
-				resolve(data);
-			}, 2500);
-		})
-	})
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            console.log('4');
+	    resolve(data);
+	}, 2500);
+    })
+})
 .then(function (data){
     console.log('5');
     arr = JSON.parse(data);
